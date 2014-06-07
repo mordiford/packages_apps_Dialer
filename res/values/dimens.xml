@@ -86,6 +86,9 @@
     <dimen name="dismiss_button_padding_start">20dip</dimen>
     <dimen name="dismiss_button_padding_end">28dip</dimen>
 
+    <!-- Size of the pie chart in the call stats detail activity -->
+    <dimen name="call_stats_details_chart_size">140dip</dimen>
+
     <!-- Padding above the favorites menu. -->
     <dimen name="favorites_menu_padding_top">6dp</dimen>
     <!-- Padding below the favorites menu.. -->

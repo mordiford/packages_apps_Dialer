@@ -50,6 +50,7 @@ import android.text.TextWatcher;
 import android.text.style.RelativeSizeSpan;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -77,6 +78,7 @@ import com.android.dialer.NeededForReflection;
 import com.android.dialer.DialtactsActivity;
 import com.android.dialer.R;
 import com.android.dialer.SpecialCharSequenceMgr;
+import com.android.dialer.util.MultiSensorManager;
 import com.android.internal.telephony.ITelephony;
 import com.android.phone.common.CallLogAsync;
 import com.android.phone.common.HapticFeedback;
@@ -809,7 +811,7 @@ public class DialpadFragment extends Fragment
                    (getActivity() instanceof DialtactsActivity ?
                             ((DialtactsActivity) getActivity()).getCallOrigin() : null));
             startActivity(intent);
-            hideAndClearDialpad();
+            hideAndClearDialpad(false);
         }
     }
 

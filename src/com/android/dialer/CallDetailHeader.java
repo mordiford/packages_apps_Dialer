@@ -40,9 +40,10 @@ import android.widget.TextView;
 import com.android.contacts.common.CallUtil;
 import com.android.contacts.common.ClipboardUtils;
 import com.android.contacts.common.ContactPhotoManager;
+import com.android.contacts.common.ContactPhotoManager.DefaultImageRequest;
 import com.android.contacts.common.format.FormatUtils;
 import com.android.contacts.common.util.Constants;
-import com.android.dialer.calllog.PhoneNumberHelper;
+import com.android.dialer.calllog.PhoneNumberDisplayHelper;
 import com.android.dialer.calllog.PhoneNumberUtilsWrapper;
 
 public class CallDetailHeader {
@@ -51,7 +52,7 @@ public class CallDetailHeader {
 
     private Activity mActivity;
     private Resources mResources;
-    private PhoneNumberHelper mPhoneNumberHelper;
+    private PhoneNumberDisplayHelper mPhoneNumberDisplayHelper;
     private ContactPhotoManager mContactPhotoManager;
 
     private String mNumber;
@@ -111,10 +112,10 @@ public class CallDetailHeader {
         }
     };
 
-    public CallDetailHeader(Activity activity, PhoneNumberHelper phoneNumberHelper) {
+    public CallDetailHeader(Activity activity, PhoneNumberDisplayHelper phoneNumberHelper) {
         mActivity = activity;
         mResources = activity.getResources();
-        mPhoneNumberHelper = phoneNumberHelper;
+        mPhoneNumberDisplayHelper = phoneNumberHelper;
         mContactPhotoManager = ContactPhotoManager.getInstance(activity);
 
         mHeaderTextView = (TextView) activity.findViewById(R.id.header_text);
@@ -274,7 +275,7 @@ public class CallDetailHeader {
         // This action allows to call the number that places the call.
         if (mCanPlaceCallsTo) {
             final CharSequence displayNumber =
-                mPhoneNumberHelper.getDisplayNumber(
+                mPhoneNumberDisplayHelper.getDisplayNumber(
                         dataNumber, data.getNumberPresentation(), data.getFormattedNumber());
 
             ViewEntry entry = new ViewEntry(
@@ -315,9 +316,12 @@ public class CallDetailHeader {
     }
 
     /** Load the contact photos and places them in the corresponding views. */
-    public void loadContactPhotos(Uri photoUri) {
+    public void loadContactPhotos(Uri photoUri, String displayName, String lookupKey,
+            int contactType) {
+        final DefaultImageRequest request = new DefaultImageRequest(displayName, lookupKey,
+                contactType);
         mContactPhotoManager.loadPhoto(mContactBackgroundView, photoUri,
-                mContactBackgroundView.getWidth(), true);
+                mContactBackgroundView.getWidth(), true, request);
     }
 
     public boolean canEditNumberBeforeCall() {
