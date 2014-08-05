@@ -69,7 +69,7 @@
     <string name="call_stats_sort_by_count">Sort by call count</string>
 
     <string name="menu_add_to_blacklist">Add to blacklist</string>
-    <string name="toast_added_to_blacklist">%s added to blacklist.</string>
+    <string name="toast_added_to_blacklist"><xliff:g id="number">%s</xliff:g> added to blacklist</string>
 
     <!--  Localized dialer buttons.
           In English, we don't need a secondary row, so all values are empty.
