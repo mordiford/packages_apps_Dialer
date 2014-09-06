@@ -44,6 +44,7 @@ public final class LookupSettings {
     public static final String RLP_YELLOWPAGES_CA = "YellowPages_CA";
     public static final String RLP_ZABASEARCH = "ZabaSearch";
     public static final String RLP_DASTELEFONBUCH = "DasTelefonbuch";
+    public static final String RLP_PAGINEBIANCHE = "PagineBianche";
     public static final String RLP_DEFAULT = RLP_OPENCNAM;
 
     private LookupSettings() {
