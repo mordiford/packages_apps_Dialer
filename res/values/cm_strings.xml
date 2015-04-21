@@ -83,7 +83,7 @@
     <string name="call_stats_blacklisted">Blocked: <xliff:g id="value">%s</xliff:g></string>
     <string name="call_stats_percent"><xliff:g id="percent">%d</xliff:g>%%</string>
     <string name="call_stats_header_total">Total: <xliff:g id="call_count">%s</xliff:g>, <xliff:g id="duration">%s</xliff:g></string>
-    <string name="call_stats_header_total_callsonly">Total: <xliff:g id="call_count">%s</xliff:g></string>
+    <string name="call_stats_header_total_callsonly">Total: <xliff:g id="call<_count">%s</xliff:g></string>
     <string name="call_stats_filter_from">Start date</string>
     <string name="call_stats_filter_to">End date</string>
     <string name="call_stats_filter_picker_title">Filter range</string>
@@ -172,4 +172,10 @@
 
     <!-- Shown as a prompt to turn on the phone permission to allow a call to be placed -->
     <string name="cm_permission_place_call">To place a call, turn on Phone permissions.</string>
+
+    <!-- Smart Options -->
+    <string name="smart_category_title">Smart options</string>
+    <string name="smart_mute_title">Smart mute</string>
+    <string name="smart_mute_summary">Mute the incoming call by flipping the device</string>
+
 </resources>
