@@ -140,7 +140,7 @@ public class SpeedDialListActivity extends ListActivity implements
         super.onResume();
 
         // get number from shared preferences
-        for (int i = 2; i <= 9; i++) {
+        for (int i = 2; i <= 15; i++) {
             String phoneNumber = SpeedDialUtils.getNumber(this, i);
             Record record = null;
             if (phoneNumber != null) {
@@ -156,7 +156,7 @@ public class SpeedDialListActivity extends ListActivity implements
 
         mAdapter.notifyDataSetChanged();
 
-        if (mInitialPickNumber >= 2 && mInitialPickNumber <= 9) {
+        if (mInitialPickNumber >= 2 && mInitialPickNumber <= 15) {
             pickContact(mInitialPickNumber);
             // we only want to trigger the picker once
             mInitialPickNumber = -1;

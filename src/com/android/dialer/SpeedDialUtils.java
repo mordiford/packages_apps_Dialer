@@ -36,7 +36,7 @@ public class SpeedDialUtils {
     private static final String NUMBER_KEY_PREFIX = "number_";
 
     public static void saveNumber(Context context, int position, String phoneNumber) {
-        if (position < 2 || position > 9) {
+        if (position < 2 || position > 15) {
             return;
         }
         SharedPreferences.Editor editor = getPrefs(context).edit();
@@ -50,7 +50,7 @@ public class SpeedDialUtils {
     }
 
     public static String getNumber(Context context, int position) {
-        if (position < 2 || position > 9) {
+        if (position < 2 || position > 15) {
             return null;
         }
         String key = NUMBER_KEY_PREFIX + position;
