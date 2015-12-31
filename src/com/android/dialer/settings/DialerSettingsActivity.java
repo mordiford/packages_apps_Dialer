@@ -179,6 +179,7 @@ public class DialerSettingsActivity extends PreferenceActivity {
             blockHidden.titleRes = R.string.block_hidden_title;
             blockHidden.summaryRes = R.string.block_hidden_summary;
             target.add(blockHidden);
+
         }
 
         Header speedDialHeader = new Header();
@@ -186,6 +187,11 @@ public class DialerSettingsActivity extends PreferenceActivity {
         speedDialHeader.titleRes = R.string.speed_dial_settings;
         speedDialHeader.intent = speedDialIntent;
         target.add(speedDialHeader);
+
+        Header smartOptionsHeader = new Header();
+        smartOptionsHeader.titleRes = R.string.smart_options_title;
+        smartOptionsHeader.fragment = SmartOptionsSettingsFragment.class.getName();
+        target.add(smartOptionsHeader);
 
         if (mCallProviders != null) {
             for (CallMethodInfo cmi : mCallProviders) {
