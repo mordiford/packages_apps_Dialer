@@ -42,7 +42,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import com.android.contacts.common.GeoUtil;
@@ -92,9 +91,6 @@ public class CallLogFragment extends Fragment implements CallLogQueryHandler.Lis
     protected CallLogAdapter mAdapter;
     protected CallLogQueryHandler mCallLogQueryHandler;
     private boolean mScrollToTop;
-
-    // The view containing the call log filter spinners
-    private LinearLayout mFilterLayout;
 
     // The Spinners to filter call log.
     private Spinner mFilterSubSpinnerView;
@@ -356,7 +352,6 @@ public class CallLogFragment extends Fragment implements CallLogQueryHandler.Lis
         mEmptyListView.setImage(R.drawable.empty_call_log);
         mEmptyListView.setActionClickedListener(this);
 
-        mFilterLayout = (LinearLayout) view.findViewById(R.id.filter_layout);
         mFilterSubSpinnerView = (Spinner) view.findViewById(R.id.filter_sub_spinner);
         mFilterStatusSpinnerView = (Spinner) view.findViewById(R.id.filter_status_spinner);
         // Update the filter views.
@@ -645,11 +640,6 @@ public class CallLogFragment extends Fragment implements CallLogQueryHandler.Lis
             mFilterStatusSpinnerView.setAdapter(filterStatusAdapter);
             mFilterStatusSpinnerView.setOnItemSelectedListener(mStatusSelectedListener);
             SpinnerContent.setSpinnerContentValue(mFilterStatusSpinnerView, mCallTypeFilter);
-        }
-
-        if (mFilterLayout != null && mFilterSubSpinnerView.getVisibility() == View.GONE &&
-                mFilterStatusSpinnerView.getVisibility() == View.GONE) {
-            mFilterLayout.setVisibility(View.GONE);
         }
     }
 
