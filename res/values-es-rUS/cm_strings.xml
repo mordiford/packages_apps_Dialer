@@ -22,14 +22,14 @@
   <!-- dialpad t9 search -->
   <string name="preference_category_t9_dialpad_search">Búsqueda con teclado T9</string>
   <string name="t9_search_input_locale">Entrada de búsqueda T9</string>
-  <string name="t9_search_input_locale_default">Predeterminado</string>
+  <string name="t9_search_input_locale_default">Predefinido</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Búsqueda de números de teléfono</string>
-  <string name="lookup_settings_description">Buscar números de teléfono desconocidos</string>
+  <string name="lookup_settings_description">Busca números de teléfono desconocidos</string>
   <string name="enable_forward_lookup_title">Búsqueda de lugares</string>
-  <string name="enable_forward_lookup_summary">Mostrar lugares cercanos cuando se busque en el marcador</string>
+  <string name="enable_forward_lookup_summary">Mostrar lugares cercanos al buscar en el marcador</string>
   <string name="enable_people_lookup_title">Búsqueda de personas</string>
-  <string name="enable_people_lookup_summary">Mostrar resultados en línea para personas cuando se busque en el marcador</string>
+  <string name="enable_people_lookup_summary">Mostrar resultados en línea para personas al buscar en el marcador</string>
   <string name="enable_reverse_lookup_title">Búsqueda inversa</string>
   <string name="enable_reverse_lookup_summary">Buscar información sobre la persona o lugar para números desconocidos en llamadas entrantes</string>
   <string name="forward_lookup_provider_title">Proveedor de búsqueda de lugares</string>
@@ -45,10 +45,10 @@
   <string name="speed_dial_settings">Ajustes de marcación rápida</string>
   <string name="speed_dial_not_set">(no definido)</string>
   <string name="speed_dial_replace">Reemplazar</string>
-  <string name="speed_dial_delete">Eliminar</string>
+  <string name="speed_dial_delete">Borrar</string>
   <string name="speed_dial_unassigned_dialog_title">Tecla sin asignar</string>
   <string name="speed_dial_unassigned_dialog_message">La tecla \'<xliff:g id="number">%s</xliff:g>\' no tiene una acción de marcación rápida asignada. ¿Quieres asignar una acción ahora?</string>
-  <string name="dialog_speed_dial_airplane_mode_message">Para utilizar la marcación rápida primero deshabilita el modo avión.</string>
+  <string name="dialog_speed_dial_airplane_mode_message">Para utilizar la marcación rápida primero desactiva el modo avión.</string>
   <string name="yes">Sí</string>
   <string name="no">No</string>
   <string name="incall_vibration_category_title">Vibración durante la llamada</string>
@@ -59,7 +59,7 @@
   <string name="incall_vibrate_45_summary">Vibrar en el segundo 45 de cada minuto durante llamadas salientes</string>
   <string name="call_log_show_all_slots">Todas las tarjetas SIM</string>
   <string name="call_log_all_calls_header">Todas las llamadas</string>
-  <string name="call_log_blacklist_header">Solo llamadas bloqueadas</string>
+  <string name="call_log_blacklist_header">Sólo llamadas bloqueadas</string>
   <!-- Call statistics -->
   <string name="call_log_stats_title">Estadísticas</string>
   <string name="callStatsDetailTitle">Detalles de llamada</string>
@@ -101,7 +101,7 @@
   <string name="sign_in_hint_text">Inicia sesión para hacer %1$s llamadas</string>
   <string name="wifi_hint_text">Haz llamadas gratuitas de %1$s a %1$s a través de Wi-Fi.</string>
   <string name="roaming_hint_text">%1$s está en roaming. Haz llamadas gratuitas de %2$s a %2$s a través de Wi-Fi.</string>
-  <string name="emergency_call_hint_text">No hay SIM. Llamadas de emergencia solamente.</string>
+  <string name="emergency_call_hint_text">Sin tarjeta SIM. Llamadas de emergencia solamente.</string>
   <string name="extra_call_method_call_option">Llamadas de <xliff:g id="provider">%s</xliff:g></string>
   <!-- InCall Plugin Settings -->
   <string name="incall_plugin_settings">Ajustes de <xliff:g id="name">%1$s</xliff:g></string>
@@ -141,5 +141,6 @@
   <string name="search_shortcut_view_note">Ver nota</string>
   <!-- Note DeepLink mod settings summary in Dialer -->
   <string name="note_mod_settings_summary">Tomar notas desde cualquier lugar</string>
-  <string name="callerinfo_provider_status_disabling">Deshabilitando</string>
+  <string name="callerinfo_provider_status_disabling">Desactivando</string>
+  <string name="show_dialpad_at_start_title">Mostrar teclado al Iniciar</string>
 </resources>

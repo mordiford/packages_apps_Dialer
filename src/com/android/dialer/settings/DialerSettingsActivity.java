@@ -250,6 +250,7 @@ public class DialerSettingsActivity extends PreferenceActivity {
             smartOptionsHeader.titleRes = R.string.smart_options_title;
             smartOptionsHeader.fragment = SmartOptionsSettingsFragment.class.getName();
             target.add(smartOptionsHeader);
+
         }
 
         if (mCallerInfoProvider != null) {
