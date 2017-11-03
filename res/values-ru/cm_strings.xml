@@ -25,6 +25,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Места рядом</string>
   <string name="people">Люди</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">T9-поиск в номеронабирателе</string>
+  <string name="t9_search_input_locale">Язык поиска</string>
+  <string name="t9_search_input_locale_default">Язык системы</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Поиск номеров телефона</string>
   <string name="enable_forward_lookup_title">Прямой поиск</string>
@@ -88,10 +92,13 @@
   <string name="speed_dial_unassigned_dialog_message">Клавише «<xliff:g id="number">%s</xliff:g>» не присвоен номер быстрого набора. Присвоить?</string>
   <string name="dialog_speed_dial_airplane_mode_message">Чтобы использовать Быстрый набор, выключите режим полёта</string>
   <!-- Speed Dial can not be set for the key used for Emergency number-->
+  <string name="speed_dial_can_not_be_set">Закрепить быстрый набор за этой клавишей невозможно</string>
   <string name="yes">Да</string>
   <string name="no">Нет</string>
   <!-- Text displayed when the list of incoming calls is empty -->
+  <string name="recentIncoming_empty">Входящих вызовов еще не было.</string>
   <!-- Text displayed when the list of outgoing calls is empty -->
+  <string name="recentOutgoing_empty">Исходящих вызовов еще не было.</string>
   <!-- Text displayed when the call log is empty. -->
   <string name="recentCalls_empty">Журнал вызовов пуст</string>
   <string name="calllog_search_hint">Искать в журнале вызовов</string>
@@ -104,6 +111,8 @@
   <string name="toast_change_video_call_failed">Невозможно совершить видеозвонок — некорректный формат номера</string>
   <string name="toast_make_video_call_failed">Невозможно осуществить видеовызов — некорректный формат номера</string>
   <!-- Add for enhance videocall ui -->
+  <string name="overflowBothCallMenuItemText">Видеовызов, показывать меня</string>
+  <string name="overflowRXCallMenuItemText">Видеовызов, скрывать меня</string>
   <string name="overflowVOCallMenuItemText">Голосовой вызов</string>
   <string name="video_call">Видеовызов</string>
   <string name="call_data_info_label">Статистика вызовов и использования данных</string>

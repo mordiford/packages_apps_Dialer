@@ -25,6 +25,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Orte in der Nähe</string>
   <string name="people">Personen</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">Dialpad T9-Suche</string>
+  <string name="t9_search_input_locale">T9-Eingabesprache</string>
+  <string name="t9_search_input_locale_default">Standard</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Telefonnummernsuche</string>
   <string name="enable_forward_lookup_title">Vorwärtssuche</string>
@@ -88,6 +92,7 @@
   <string name="speed_dial_unassigned_dialog_message">Der Wähltaste \"<xliff:g id="number">%s</xliff:g>\" ist keine Kurzwahlaktion zugewiesen. Möchten Sie das jetzt tun?</string>
   <string name="dialog_speed_dial_airplane_mode_message">Wenn Sie die Kurzwahl nutzen möchten, müssen Sie zunächst den Flugmodus deaktivieren</string>
   <!-- Speed Dial can not be set for the key used for Emergency number-->
+  <string name="speed_dial_can_not_be_set">Kurzwahl für diese Taste nicht verfügbar</string>
   <string name="yes">Ja</string>
   <string name="no">Nein</string>
   <!-- Text displayed when the list of incoming calls is empty -->

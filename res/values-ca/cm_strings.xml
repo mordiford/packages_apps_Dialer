@@ -25,6 +25,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Llocs propers</string>
   <string name="people">Persones</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">Cerca en teclat T9</string>
+  <string name="t9_search_input_locale">Entrada de cerca T9</string>
+  <string name="t9_search_input_locale_default">Predeterminat</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Cerca de número de telèfon</string>
   <string name="enable_forward_lookup_title">Cerca directa</string>
@@ -80,7 +84,7 @@
   <string name="call_recording_format">Format d\'àudio</string>
   <string name="call_playback_no_app_found_toast">Es pot trobar cap aplicació per a la reproducció de la gravació seleccionada.</string>
   <!-- Speed Dial -->
-  <string name="speed_dial_settings">Ajustaments de trucada ràpida</string>
+  <string name="speed_dial_settings">Configuració de trucada ràpida</string>
   <string name="speed_dial_not_set">(no configurat)</string>
   <string name="speed_dial_replace">Substitueix</string>
   <string name="speed_dial_delete">Esborra</string>

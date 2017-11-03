@@ -25,6 +25,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Tempat terdekat</string>
   <string name="people">Orang</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">Penelusuran dialpad T9</string>
+  <string name="t9_search_input_locale">Masukan penelusuran T9</string>
+  <string name="t9_search_input_locale_default">Standar</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Penelusuran nomor telepon</string>
   <string name="enable_forward_lookup_title">Penelusuran kedepan</string>
@@ -101,6 +105,7 @@
   <string name="clear">Bersihkan</string>
   <string name="description_clear_search">Bersihkan pencarian</string>
   <string name="video_call_welcome_title"><b>Selamat datang di Video Calling Dialer baru</b></string>
+  <string name="video_call_welcome_message_repeat">Selalu tampilkan pesan ini</string>
   <string name="toast_change_video_call_failed">Tidak dapat beralih ke panggilan video, format nomor salah</string>
   <string name="toast_make_video_call_failed">Tidak dapat melakukan panggilan video, format nomor salah</string>
   <!-- Add for enhance videocall ui -->
@@ -117,17 +122,25 @@
   <string name="menu_add_to_4g_conference_call">Tambahkan ke panggilan konferensi 4G</string>
   <string name="menu_4g_conference_call">Panggilan konferensi 4G</string>
   <!-- Title for incoming 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_volte">Panggilan suara masuk 4G</string>
   <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_lte">Panggilan video masuk 4G</string>
   <!-- Title for outgoing 4G voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_volte">Panggilan suara keluar 4G</string>
   <!-- Title for incoming 4G video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_lte">Panggilan video keluar 4G</string>
   <!-- Title for missed 4G voice call in call details screen [CHAR LIMIT=60] -->
   <string name="type_missed_volte">Panggilan suara 4G tak terjawab</string>
   <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
   <string name="type_missed_video_lte">Panggilan video 4G tak terjawab</string>
   <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_vowifi">Panggilan suara masuk melalui Wi-Fi</string>
   <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_wifi">Panggilan video masuk melalui Wi-Fi</string>
   <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_vowifi">Panggilan suara keluar melalui Wi-Fi</string>
   <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_wifi">Panggilan video keluar melalui Wi-Fi</string>
   <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
   <string name="type_missed_vowifi">Panggilan suara Wi-Fi tak terjawab</string>
   <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->

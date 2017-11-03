@@ -25,6 +25,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Locais próximos</string>
   <string name="people">Pessoas</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">Pesquisa no teclado T9</string>
+  <string name="t9_search_input_locale">Pesquisar entrada no teclado T9</string>
+  <string name="t9_search_input_locale_default">Padrão</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Pesquisa de números de telefone</string>
   <string name="enable_forward_lookup_title">Pesquisa de encaminhamento</string>
@@ -88,6 +92,7 @@
   <string name="speed_dial_unassigned_dialog_message">Nenhuma ação de discagem rápida atribuída à tecla \'<xliff:g id="number">%s</xliff:g>\'. Deseja atribuir uma ação agora?</string>
   <string name="dialog_speed_dial_airplane_mode_message">Deslige o modo avião para usar a discagem rápida</string>
   <!-- Speed Dial can not be set for the key used for Emergency number-->
+  <string name="speed_dial_can_not_be_set">Não é possivel associar uma discagem rápida para essa tecla</string>
   <string name="yes">Sim</string>
   <string name="no">Não</string>
   <!-- Text displayed when the list of incoming calls is empty -->
@@ -131,9 +136,15 @@
   <!-- Title for missed 4G video call in call details screen [CHAR LIMIT=60] -->
   <string name="type_missed_video_lte">Chamada de vídeo 4G perdida</string>
   <!-- Title for incoming wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_vowifi">Chamada de voz Wi-Fi recebida</string>
   <!-- Title for incoming wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_incoming_video_wifi">Chamada de vídeo Wi-Fi recebida</string>
   <!-- Title for outgoing wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_vowifi">Chamada de voz Wi-Fi efetuada</string>
   <!-- Title for outgoing wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_outgoing_video_wifi">Chamada de vídeo Wi-Fi efetuada</string>
   <!-- Title for missed wifi voice call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_vowifi">Chamada de voz Wi-Fi perdida</string>
   <!-- Title for missed wifi video call in call details screen [CHAR LIMIT=60] -->
+  <string name="type_missed_video_wifi">Chamada de vídeo Wi-Fi perdida</string>
 </resources>

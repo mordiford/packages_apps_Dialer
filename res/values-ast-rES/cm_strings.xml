@@ -24,6 +24,10 @@
   <!-- Forward lookup -->
   <string name="nearby_places">Llugares averaos</string>
   <string name="people">Persones</string>
+  <!-- dialpad t9 search -->
+  <string name="preference_category_t9_dialpad_search">Guetar Dialpad T9</string>
+  <string name="t9_search_input_locale">Entrada gueta T9</string>
+  <string name="t9_search_input_locale_default">Predetermináu</string>
   <!-- Number lookup -->
   <string name="lookup_settings_label">Gueta de númberos telefónicos</string>
   <string name="enable_forward_lookup_title">Gueta direuta</string>
@@ -92,6 +96,8 @@
   <string name="no_call_log">Nun hai rexistru de llamaes</string>
   <string name="clear">Llimpiar</string>
   <string name="description_clear_search">Llimpiar gueta</string>
+  <string name="video_call_welcome_title"><b>Dámoste l\'acoyida al marcador nuevu de videollamaes</b></string>
+  <string name="video_call_welcome_message">¡Préstamos oyer esa voz familiar na fin de la llinia, pero falar cara a cara ye muncho meyor! Equí ta lo que deberíes saber pa consiguir conexones en tiempu real (¿FaceTime?):\n Precisarás tar nuna rede 4G LTE o Wi-Fi\n El preséu al que llames ha ser tamién compatible coles videollamaes\n Les videollamaes usen alta velocidá\n Tamién pues pasar d\'una llamada a una videollamada\n\n Mira <a>https://support.t-mobile.com/docs/DOC-23574</a> pa más información.</string>
   <string name="video_call_welcome_message_repeat">Amosar esti mensaxe cada vegada</string>
   <string name="toast_change_video_call_failed">Nun pue camudase a videollamada, formatu incorreutu de númberu</string>
   <string name="toast_make_video_call_failed">Nun pue facese una videollamada, formatu incorreutu de númberu</string>
