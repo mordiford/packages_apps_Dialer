@@ -27,7 +27,6 @@ import com.android.contacts.common.list.PinnedHeaderListView;
 import com.android.dialer.app.R;
 import com.android.dialer.callintent.CallInitiationType;
 import com.android.dialer.common.LogUtil;
-import com.android.dialer.lookup.LookupCache;
 import com.android.dialer.phonenumbercache.CachedNumberLookupService;
 import com.android.dialer.phonenumbercache.PhoneNumberCache;
 import com.android.dialer.util.PermissionsUtil;
@@ -72,12 +71,11 @@ public class RegularSearchFragment extends SearchFragment
   protected void cacheContactInfo(int position) {
     CachedNumberLookupService cachedNumberLookupService =
         PhoneNumberCache.get(getContext()).getCachedNumberLookupService();
-    final RegularSearchListAdapter adapter = (RegularSearchListAdapter) getAdapter();
     if (cachedNumberLookupService != null) {
+      final RegularSearchListAdapter adapter = (RegularSearchListAdapter) getAdapter();
       cachedNumberLookupService.addContact(
           getContext(), adapter.getContactInfo(cachedNumberLookupService, position));
     }
-    LookupCache.cacheContact(getContext(), adapter.getLookupContactInfo(position));
   }
 
   @Override

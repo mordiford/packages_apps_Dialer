@@ -42,7 +42,6 @@ import com.android.contacts.common.util.UriUtils;
 import com.android.dialer.common.Assert;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.logging.ContactSource;
-import com.android.dialer.lookup.LookupCache;
 import com.android.dialer.oem.CequintCallerIdManager;
 import com.android.dialer.oem.CequintCallerIdManager.CequintCallerIdContact;
 import com.android.dialer.phonenumbercache.CachedNumberLookupService.CachedContactInfo;
@@ -434,8 +433,6 @@ public class ContactInfoHelper {
         // Contact found in the extended directory specified by directoryId
         info.sourceType = ContactSource.Type.SOURCE_TYPE_EXTENDED;
       }
-    } else if (LookupCache.hasCachedContact(mContext, number)) {
-      info = LookupCache.getCachedContact(mContext, number);
     } else if (mCachedNumberLookupService != null) {
       CachedContactInfo cacheInfo =
           mCachedNumberLookupService.lookupCachedContactFromNumber(mContext, number);

@@ -86,7 +86,6 @@ RES_DIRS := \
 	$(BASE_DIR)/dialer/enrichedcall/simulator/res \
 	$(BASE_DIR)/dialer/interactions/res \
 	$(BASE_DIR)/dialer/main/impl/res \
-	$(BASE_DIR)/dialer/lookup/res \
 	$(BASE_DIR)/dialer/notification/res \
 	$(BASE_DIR)/dialer/oem/res \
 	$(BASE_DIR)/dialer/phonenumberutil/res \
@@ -147,7 +146,6 @@ DIALER_MANIFEST_FILES += \
 	$(BASE_DIR)/dialer/enrichedcall/simulator/AndroidManifest.xml \
 	$(BASE_DIR)/dialer/interactions/AndroidManifest.xml \
 	$(BASE_DIR)/dialer/main/impl/AndroidManifest.xml \
-	$(BASE_DIR)/dialer/lookup/AndroidManifest.xml \
 	$(BASE_DIR)/dialer/notification/AndroidManifest.xml \
 	$(BASE_DIR)/dialer/oem/AndroidManifest.xml \
 	$(BASE_DIR)/dialer/phonenumberutil/AndroidManifest.xml \
@@ -298,10 +296,9 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	dialer-mime4j-core-target \
 	dialer-mime4j-dom-target \
 	jsr305 \
-	legacy-test \
 	libphonenumber \
 	okhttp \
-	volley
+	volley \
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
 	android-support-design \
@@ -357,6 +354,8 @@ LOCAL_DX_FLAGS := --multi-dex
 endif
 
 # End Bug: 37077388
+
+LOCAL_SDK_VERSION := system_current
 LOCAL_MODULE_TAGS := optional
 LOCAL_PACKAGE_NAME := Dialer
 LOCAL_CERTIFICATE := shared
